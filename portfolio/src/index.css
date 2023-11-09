@@ -323,68 +323,6 @@ code {
   border-radius: 2rem;
 }
 
-#skills {
-  padding-top: 0.5px;
-}
-
-#portfolio {
-  width: 90vw;
-  margin: auto;
-}
-
-#myskills {
-  padding-top: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 100vw;
-}
-
-#myskills ul, #myportfolio{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-#myskills li, #myportfolio li {
-  float: left;
-}
-
-
-#skill {
-  width: 20rem;
-  height: 48vh;
-  padding: 20px;
-  position: relative;
-  margin: 10px;
-}
-
-#skill p {
-  padding-left: 10px;  
-  width: 200px;
-}
-
-#skill img {
-  width: 70px;
-  padding-left: 10px;
-  position: absolute;
-  top: 50%;
-  bottom: 0;
-  border-radius: .5rem;
-}
-
-#skill h3 {
-  position: absolute;
-  bottom: 0;
-  padding-left: 10px;
-  padding-bottom: 20px;
-}
-
 #about {
   width: 90vw;
   height: 100vh;
@@ -522,6 +460,10 @@ code {
     padding-left: 5%;
   }
 
+  #home-text p {
+    max-width: 90vw;
+  }
+
   #home-text h1 {
     padding-top: 5%;
   }
@@ -541,11 +483,6 @@ code {
 
   #small-pic img {
     display: block;
-  }
-
-  #contact {
-    padding-top: 0;
-    margin-top: 0;
   }
 
   #footer{
@@ -583,101 +520,65 @@ code {
   }
 }
 
-.project {
-  width: 30%;
-  height: 28rem;
-  margin: 10px;
-  padding: 20px;
-  position: relative;
-  margin-bottom: 20px;
-  box-shadow: 4px 2px 4px 2px rgba(0,0,0,.2);
+#entertainment {
+  width: 92vw;
 }
-
-
-.container {
-  width: 25rem;
-  height: 12rem;
-  border-radius: 2rem;
-}
-
-.container img {
+#entertainment ul {
   width: 100%;
-  height: 100%;
-  overflow: "hidden";
+  display: inline-flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  padding: 0;
+}
+
+#entertainment li {
+  display: inline-block;
+}
+
+.hobby {
+  width: 23rem;
+  height: 17rem;
+  margin: 15px;
+  padding: 20px;
   border-radius: .5rem;
+  background-color: white;
 }
 
-.project p {
-  overflow-y: auto;
-  max-height: 7rem;
+body {
+  background-color: rgb(245, 245, 245);
 }
 
-.topPro, .botPro {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.hobby i{
+  font-size: 30px;
 }
 
-.topPro p{
-  color: gray;
-  font-size: 12px;
+.hobby p {
+  color: rgb(197, 197, 197);
+  font-size: 13px;
 }
 
-.botPro button {
-  width: 110px;
-  height: 40px;
-  background-color: transparent;
-  border: 2px solid black;
-  font-family: 'Montserrat';
-  margin-right: 10px;
-}
-
-.botPro a {
-  text-decoration: none;
-  color: black;
-}
-
-.botPro .github {
-  color: white;
-  background-color: #20205c;
-  border: none;
-}
-
-.botPro .github a {
-  color: white;
-}
-
-.botPro button:hover {
-  background-color: #20205c;
-  border: none;
+.hobby:hover {
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
   transition: .8s;
 }
 
-.botPro button:hover > a {
-  color: white;
-  transition: .8s;
+.hobby:hover i {
+  display: inline-block;
+  animation: spin 1s linear infinite; 
 }
 
-.botPro button:not(:hover), .botPro .github:not(:hover) {
-  transition: .8s;
-}
-
-.botPro .github:hover {
-  background-color: transparent;
-  border: 2px solid black;
-  transition: .8s;
-}
-
-.botPro .github:hover > a {
-  color: black;
-  transition: .8s;
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 760px) {
-  .project {
-    width: 90vw; 
-    margin: auto;
-  }
   #navbar #nav-menu{
     width: 100vw;
     height: 100vh;
@@ -715,24 +616,5 @@ code {
 
   #navbar #contactme {
     display: none;
-  }
-
-  #contactmee {
-    width: 100vw;
-    border-radius: 0;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 20px;
-  }
-
-  #contact-text {
-    top: 100%;
-    width: 90%;
-    color: black;
-  }
-
-  #contact-text p {
-    width: 90%;
-    color: rgb(155, 155, 155);
   }
 }

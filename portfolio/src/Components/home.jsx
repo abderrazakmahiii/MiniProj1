@@ -1,8 +1,8 @@
 import React from 'react';
 import home from '../img/home.jpg';
-import { BiLogoLinkedin } from 'react-icons/bi';
+
 export const social = [
-    {icon:'BiLogoLinkedin', link:'https://www.linkedin.com/in/abderrazakmahiii/'},
+    {icon:'ri-linkedin-fill', link:'https://www.linkedin.com/in/abderrazakmahiii/'},
     {icon:'ri-github-fill', link:'https://github.com/abderrazakmahiii'},
     {icon:'ri-mail-fill', link:'mailto:abderrazakmahiii@gmail.com'},
     {icon: 'ri-facebook-fill', link:'https://www.facebook.com/abderrazakmahiii/'},

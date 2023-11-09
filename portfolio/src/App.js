@@ -4,6 +4,7 @@ import Sidebar from './Components/sidebar'
 import Home from './Components/home';
 import About from './Components/about';
 import Footer from './Components/footer';
+import Entertainment from './Components/entertainment';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Sidebar />
       <Home />
       <About />
+      <Entertainment />
       <Footer />
     </div>
   );
