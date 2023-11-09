@@ -4,7 +4,7 @@ import { RiMenu4Fill } from "react-icons/ri";
 export const menu = [
   { name: "Home", link: "#home", icon: "ri-home-2-fill" },
   { name: "About", link: "#about", icon: "ri-code-box-fill" },
-  { name: "Entrainment", link: "#entrainment", icon: "ri-gamepad-fill" },
+  { name: "Entrainment", link: "#entertainment", icon: "ri-gamepad-fill" },
 ];
 
 export var navigateToggle = false;
