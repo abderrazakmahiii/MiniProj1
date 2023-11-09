@@ -87,7 +87,7 @@ code {
   background-color: #20205c;
   color: white;
   text-align: center;
-  transition: '.5s all ease';
+  transition: .5s all ease;
   z-index: 3;
   transition: .8s;
   display: none;
@@ -594,7 +594,7 @@ body {
     background-color: #20205c;
     color: white;
     text-align: center;
-    transition: '.5s all ease';
+    transition: .5s all ease;
   }
 
   #navbar #nav-menu li {
